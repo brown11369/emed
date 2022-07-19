@@ -1,58 +1,70 @@
 import "../style/home.css"
-import { AiOutlineSearch, AiOutlineShoppingCart,AiOutlineBell } from "react-icons/ai";
-import { useState } from "react";
 
+import Menu from "./Menu";
 
-
-function Home(){
-
-    let [token,setToken]=useState(false)
-    let dtoken
-    function checktoken(){
-        if(token===false){
-            dtoken=sessionStorage.getItem("token")
-            setToken(true)
-        }
-        else{
-            dtoken=sessionStorage.removeItem("token")
-            setToken(false)
-        }
-    }
-
-
-    return(
+function Home() {
+    return (
         <>
-        <header>
-            <div className="menu">
-                {
-                    token
-                }
-                <div className="logo">
-                    <h1>firstMed</h1>
-                    {/* <form> */}
-                    <button type="Submit" onClick={()=>{
-                        checktoken();
-                        // sessionStorage.removeItem("token")
-                    }}>logout</button>
-                    {/* </form> */}
-                    
+            <Menu />
+            <section className="hero">
+                <div className="first-img">
+                    <img src="./assets/images/Konica.jpg" alt="medical" />
+                </div>
+                <div className="sec-img">
+                </div>
+            </section>
+
+            <section className="val-sec">
+                <div>
+                    <h1>*</h1>
+                    <h2 className="foc-band">free delivery</h2>
+                    <p className="foc-short">For all orders over 1000Rs.</p>
                 </div>
                 <div>
-                    {/* <input type="search"/> */}
-                    <AiOutlineSearch className="menuIcon"/>
-                    <AiOutlineShoppingCart className="menuIcon"/>
-                    <AiOutlineBell className="menuIcon"/>
+                    <h1>*</h1>
+                    <h2 className="foc-band">90 Days Return</h2>
+                    <p className="foc-short">If goods have problems</p>
                 </div>
-            </div>
-            <nav>
+                <div>
+                    <h1>*</h1>
+                    <h2 className="foc-band">Secure Payment</h2>
+                    <p className="foc-short">100% secure payment</p>
+                </div>
+                <div>
+                    <h1>*</h1>
+                    <h2 className="foc-band">24/7 Support</h2>
+                    <p className="foc-short">Dedicated support</p>
+                </div>
+                <div>
+                    <h1>*</h1>
+                    <h2 className="foc-band">Gift Service</h2>
+                    <p className="foc-short">Support gift service</p>
+                </div>
+            </section>
 
-            </nav>
-        </header>
-        <section className="hero">
-            <h3>Best Online</h3>
-            <h2>Medicine</h2>
-            <h3>Delivery Services</h3>
-        </section>
+            <section>
+                <div>
+                    <h2>Deal of the day</h2>
+                    <div className="products">
+                        <div className="card">
+                            <img src="./assets/images/prod.jpg" alt="prod" />
+                            <div>
+                                <span>200 Rs.</span>
+                                <del>600 Rs.</del>
+                            </div>
+                            <h4>Ventilator</h4>
+                        </div>
+                        <div className="card">
+                            <img src="./assets/images/prod.jpg" alt="prod" />
+                            <div>
+                                <span>200 Rs.</span>
+                                <del>600 Rs.</del>
+                            </div>
+                            <h4>Ventilator</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

@@ -9,7 +9,6 @@ function Adminreg(){
 
     function readData(property,value){
         loginData[property]=value;
-        console.log(loginData)
     }
 
     function login(){
@@ -23,11 +22,10 @@ function Adminreg(){
         .then(response=>response.json())
         .then((data)=>{
             sessionStorage.setItem("token",data.token)
-            navigate("/home")
-            console.log(data)
+            navigate("/dashboard")
         })
         .catch((err)=>{
-            console.log(err)
+            console.log("check internet connection")
         })
     }
 

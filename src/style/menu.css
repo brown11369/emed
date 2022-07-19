@@ -1,0 +1,45 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 30px;
+    background-color: #d9d9d9
+}
+
+.menuIcon{
+    font-size: 22px;
+    padding-inline: 3px;
+}
+
+.top-nav{
+    background-color: #94cdff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 0px;
+    font-size: 19px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+ul,a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.active{
+    color: #000;
+}
+
+
+input.search {
+    width: 550px;
+    height: 35px;
+    text-indent: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 19px;
+}

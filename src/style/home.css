@@ -1,17 +1,46 @@
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 15px;
-    background-color: #35e3e3;
-}
-
-.menuIcon{
-    font-size: 22px;
-    padding-inline: 3px;
-}
-
 .hero{
-    background-color: #35e3e3;
     text-align: center;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    padding: 7px 9px;
+    border: 1px solid;
+}
+
+.first-img{
+    width: 70%;
+}
+
+.sec-img{
+    width: 30%;
+    height: 300px;
+    background-color: black;
+}
+
+.val-sec{
+    color: #000;
+    text-align: center;
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+    margin: 30px 65px;
+}
+
+.foc-band{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.foc-short{
+    color: #666;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.products {
+    display: flex;
 }

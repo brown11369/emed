@@ -1,11 +1,20 @@
-// import { children } from "react";
 import {Navigate} from "react-router-dom"
 function Protect(props){
     let token=sessionStorage.getItem("token")
-    console.log(token)
-    return(
-        token!==null?props.children:<Navigate to="/admin-reg"/>
-    )
+
+    //return token!==null?props.children:<Navigate to="/wp-admin"/>
+
+    function pro (){
+        if(token!==null){
+            return props.children
+        }
+        else{
+            return (<Navigate to="/wp-admin"/>)
+        }
+
+    }
+    return pro()
+            
 }
 
 export default Protect;
