@@ -1,5 +1,0 @@
-{
-    "email":"barunk1357@gmail.com",
-    "password":"barun1234",
-    "role":"admin"
-}
