@@ -1,0 +1,17 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 15px;
+    background-color: #35e3e3;
+}
+
+.menuIcon{
+    font-size: 22px;
+    padding-inline: 3px;
+}
+
+.hero{
+    background-color: #35e3e3;
+    text-align: center;
+}
