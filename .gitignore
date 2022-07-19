@@ -11,6 +11,10 @@
 # production
 /build
 
+#files
+/demo.js
+/demo.txt
+
 # misc
 .DS_Store
 .env.local
