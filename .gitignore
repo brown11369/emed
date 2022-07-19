@@ -12,8 +12,8 @@
 /build
 
 #files
-./demo.js
-./demo.txt
+demo.js
+demo.txt
 
 # misc
 .DS_Store
