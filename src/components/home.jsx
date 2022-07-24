@@ -1,6 +1,7 @@
 import "../style/home.css"
 
 import Menu from "./Menu";
+import Product from "./product";
 
 function Home() {
     return (
@@ -46,25 +47,70 @@ function Home() {
                 <div>
                     <h2>Deal of the day</h2>
                     <div className="products">
-                        <div className="card">
-                            <img src="./assets/images/prod.jpg" alt="prod" />
-                            <div>
-                                <span>200 Rs.</span>
-                                <del>600 Rs.</del>
-                            </div>
-                            <h4>Ventilator</h4>
-                        </div>
-                        <div className="card">
-                            <img src="./assets/images/prod.jpg" alt="prod" />
-                            <div>
-                                <span>200 Rs.</span>
-                                <del>600 Rs.</del>
-                            </div>
-                            <h4>Ventilator</h4>
-                        </div>
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
                     </div>
                 </div>
             </section>
+            <section>
+                <div>
+                    <h2>wellness Product</h2>
+                    <div className="products">
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Daily Need</h2>
+                    <div className="products">
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                        <Product />
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <section className="footer-top">
+                    <div>
+                        <h4 className="footer-div">Usefull links</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Products</li>
+                            <li>Help</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div className="footer-div">
+                        <h4>Blogs</h4>
+                        <ul>
+                            <p>How to buy a product in festival session</p>
+                            <p>Heavy discount on elctric product buy a product</p>
+                            <p>Make a account and sell your product</p>
+                            <p>Lorem ipsum lorem ipsum</p>
+                        </ul>
+                    </div>
+                    <div className="footer-div">
+                        <h4>Reach us</h4>
+                        <address>Delhi Cannaught place block-b near H&m Store</address>
+                        <p>+120-3449491</p>
+                        <p>emed@help.com</p>
+                    </div>
+                </section>
+                <section className="footer-bottom">
+                    <h4>E-med | Right Reserved</h4>
+                </section>
+            </footer>
         </>
     )
 }

@@ -1,7 +1,9 @@
 import "../../style/adminreg.css"
 import {useNavigate} from "react-router-dom";
 
+
 function Adminreg(){
+
     const navigate=useNavigate()
     let loginData={
         "role":"admin"
@@ -22,7 +24,7 @@ function Adminreg(){
         .then(response=>response.json())
         .then((data)=>{
             sessionStorage.setItem("token",data.token)
-            navigate("/dashboard")
+            navigate("/dashboard",{ state: { idToken: data.token} })
         })
         .catch((err)=>{
             console.log("check internet connection")
@@ -40,15 +42,11 @@ function Adminreg(){
                     <input className="inp" type="password" onChange={(event)=>{
                         readData("password",event.target.value)
                     }} placeholder="Password"/>
-                    {/* <input type="text" onChange={()=>{
-                        readData("role","admin")
-                    }} /> */}
                     <button onClick={()=>{
                         login()
-                    }} className="btn">Submit</button>
+                    }} className="btn">Login</button>
                     <div><p className="forget">Forget Password?</p></div>
                 </div>
-
             </div>
         </section>
         </>

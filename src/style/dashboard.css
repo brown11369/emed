@@ -1,0 +1,13 @@
+.neo{
+    display: flex;
+}
+.dashboard-menu {
+    width: 8%;
+    background-color: #424242;
+    color: #fff;
+}
+
+.dashboard-link {
+    padding: 10px 13px;
+    cursor: pointer;
+}
